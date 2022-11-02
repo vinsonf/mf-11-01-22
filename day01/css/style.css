@@ -1,3 +1,42 @@
 body{
     font-size: 30px;
 }
+
+.git-flow{
+    position: relative;
+    height: 400px;
+    width: 600px;
+    background-color: #000;
+}
+
+.git-flow li:nth-child(1){
+    color: red;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.git-flow li:nth-child(2){
+    position: absolute;
+    top: 200px;
+    left: 0;
+    color: blue;
+
+}
+
+.git-flow li:nth-child(3){
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    color: white;
+    transform: translateX(-50%);
+}
+
+.git-flow li:nth-child(4){
+    color: yellow;
+    position: absolute;
+    top: 200px;
+    right: 0;
+
+}
