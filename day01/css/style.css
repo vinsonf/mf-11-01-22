@@ -3,6 +3,11 @@ body{
     padding: 50px;
 }
 
+h1 {
+    color: #ff0000;
+}
+
+
 .git-flow{
     position: relative;
     height: 400px;
