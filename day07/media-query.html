@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        .flex {
+            display: flex;
+            background-color: yellow;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            height: 100vh;
+            font-size: 4rem;
+        }
+
+        .box {
+            width: 50%;
+            height: 100px;
+            margin: 0px;
+            background-color: red;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        /* .box:nth-child(odd){
+            order: 0;
+            align-self: end;
+        }
+        .box:nth-child(even){
+            order: 0;
+            align-self: start;
+        } */
+
+        .box:nth-child(odd) {
+            flex: 1;
+        }
+
+        .box:nth-child(even) {
+            flex: 2;
+        }
+
+
+
+
+
+        @media (min-width: 800px) {
+            .flex {
+                background-color: blue;
+            }
+
+            .box:nth-child(odd) {
+                flex: 1;
+            }
+
+            .box:nth-child(even) {
+                flex: 1;
+            }
+        }
+
+        @media (min-width: 700px) and (max-width: 799px) {
+            .flex {
+                background-color: green;
+            }
+
+            .box:nth-child(odd) {
+                flex: 1;
+            }
+
+            .box:nth-child(even) {
+                flex: 1;
+            }
+        }
+
+        @media(orientation: landscape) {
+            .flex {
+                background-color: purple;
+            }
+        }
+
+        .menu ul {
+            display: flex;
+            list-style: none;
+            margin: 20px;
+            font-size: 30px;
+        }
+
+        .menu li {
+            margin: 0px 10px;
+        }
+
+        .side {
+            width: 50%;
+            background-color: yellow;
+            container-type: inline-size; 
+        }
+
+        .nav {
+            container-type: inline-size; 
+            background-color: pink;
+        }
+
+        @container (max-width: 400px) {
+            .menu ul {
+                display: block;
+                list-style: none;
+                margin: 20px;
+                font-size: 30px;
+            }
+        }
+    </style>
+
+    <div class="nav">
+        <div class="menu">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="side">
+        <div class="menu">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="flex">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <!-- <div class="box">3</div>
+        <div class="box">4</div> -->
+    </div>
+
+
+
+
+</body>
+
+</html>
