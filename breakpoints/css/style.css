@@ -1,0 +1,28 @@
+.xs, .sm, .md, .lg, .xl {
+    display: none;
+}
+
+@media (max-width: 992px) {
+  body{
+    background: rgb(124, 45, 45);
+  }
+  
+
+}
+
+@media(max-width: 768px ){
+    .md{
+        display: block;
+    }
+}
+
+@media(max-width: 768px ){
+    .sm{
+        display: block;
+    }
+}
+@media(max-width: 576px ){
+    .xs{
+        display: block;
+    }
+}
