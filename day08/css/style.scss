@@ -1,0 +1,42 @@
+@import "variables";
+@import "themes";
+@import "global";
+
+body {
+  background-color: $primary;
+  color: $secondary;
+  .nav {
+    @include themer(white, grey, 20px);
+    ul {
+      display: flex;
+      list-style: none;
+    }
+  }
+  .hero {
+    background-color: $secondary;
+    color: $primary;
+    padding: 100px;
+    button {
+      background-color: white;
+    }
+  }
+  .side-nav {
+    @include darktheme;
+    li {
+      margin: 10px;
+      top: 30px;
+    }
+  }
+  .gallery {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+  }
+  .fun {
+    @include themer(green, yellow, 20px);
+  }
+  .about {
+    @extend .darkmode;
+    padding: 20px;
+  }
+}

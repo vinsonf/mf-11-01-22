@@ -1,0 +1,19 @@
+@mixin darktheme {
+    background-color: black;
+    color: white;
+    border: white 2px solid;
+  }
+  
+  
+  @mixin themer($color, $bg, $fontSize) {
+      color: $color;
+      background-color: $bg;
+      font-size: $fontSize;
+      border: $color 20px solid;
+      padding: $fontSize;
+  }
+  
+  .darkmode {
+    @include darktheme;
+  }
+  

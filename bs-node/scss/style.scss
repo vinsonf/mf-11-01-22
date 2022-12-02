@@ -1,0 +1,15 @@
+$primary: red;
+$secondary: blue;
+
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+
+$theme-colors: (
+  "cool": #00d9d5,
+  "alert": #ffc636
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

@@ -1,0 +1,62 @@
+.darkmode, body .about {
+  background-color: black;
+  color: white;
+  border: white 2px solid;
+}
+
+li {
+  margin: 10px;
+}
+
+button {
+  padding: 1rem 2rem;
+  background-color: aquamarine;
+}
+
+body {
+  background-color: rgb(153, 0, 255);
+  color: rgb(21, 152, 195);
+}
+body .nav {
+  color: white;
+  background-color: grey;
+  font-size: 20px;
+  border: white 20px solid;
+  padding: 20px;
+}
+body .nav ul {
+  display: flex;
+  list-style: none;
+}
+body .hero {
+  background-color: rgb(21, 152, 195);
+  color: rgb(153, 0, 255);
+  padding: 100px;
+}
+body .hero button {
+  background-color: white;
+}
+body .side-nav {
+  background-color: black;
+  color: white;
+  border: white 2px solid;
+}
+body .side-nav li {
+  margin: 10px;
+  top: 30px;
+}
+body .gallery {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+body .fun {
+  color: green;
+  background-color: yellow;
+  font-size: 20px;
+  border: green 20px solid;
+  padding: 20px;
+}
+body .about {
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */
