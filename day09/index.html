@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+< class="bg-primary">
+    <ul>
+        <li><span>1</span></li>
+        <span>1.5</span>
+        <li>25 <br>
+        30</li>
+        <li class="middle">3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+    <ul>
+        <li>1</li>
+       
+    </ul>
+    <form action="">
+        <input type="text">
+        <input disabled >
+        <input type="number">
+        <input type="checkbox">
+        <button>submit</button>
+    </form>
+
+    <!-- bootstrap nav tabs -->
+
+    <!-- Nav tabs -->
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Messages</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
+    </li>
+  </ul>
+  
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0"><h1><h1>Hell<span>o</span> W<span>0</span>rld</h1></h1></div>
+    <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">two</div>
+    <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">three</div>
+    <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab" tabindex="0">four</div>
+  </div>
+
+  <script>
+    // const key = prompt('Enter your key');
+
+    function getPokemon(name) {
+        fetch('https://pokeapi.co/api/v2/pokemon/' + name, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+            'Authorization': `Bearer ${process.env.API_KEY}`
+        }
+    }
+    )
+    .then(res => res.json())
+    .then(data => data)
+    .then(data => {
+        data.results.forEach(pokemon => {
+            const li = document.createElement('li')
+            li.innerText = pokemon.name
+            document.querySelector('ul').appendChild(li)
+        })
+    })
+    }
+
+    getPokemon('pikachu')
+    getPokemon('charmander')
+   
+  </script>
+
+</body>
+</html>
