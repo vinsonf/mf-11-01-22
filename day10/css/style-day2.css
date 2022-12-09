@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.box {
+    box-shadow: inset 0 0 0 1px #000;
+    height: 100px;
+}
+
+.hero {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwQE6kleRVHtrvB4V4W12YvpqPWi_kDmOMbg&usqp=CAU);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ff5601;
+    color: white;
+    text-shadow:  0 1px 10px #ff5601;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #ff5601;
+    color: white;
+    border-radius: 10px;
+}
+
+.find-me{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.find-me h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}

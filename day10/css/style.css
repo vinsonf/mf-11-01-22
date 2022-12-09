@@ -1,0 +1,31 @@
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+.contain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 10px;
+    /* flex-direction: column; */
+}
+
+.card {
+    box-sizing: border-box;
+    width: calc(25% - 8px);
+    height: 400px;
+    border: 1px solid #000;
+    display: inline-block;
+}
+
+@media(max-width: 800px) {
+    .card {
+        width: calc(50% - 8px);
+    }
+}
+@media(max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+}
