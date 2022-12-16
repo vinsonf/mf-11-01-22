@@ -148,9 +148,11 @@ input:required::before {
 @keyframes slideup {
     0% {
        z-index: 0;
+       background-color: red;
     }
     100% {
-       z-index:3
+       z-index:3;
+       background-color: green;
     }
 }
 

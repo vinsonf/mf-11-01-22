@@ -1,0 +1,62 @@
+$padding-unit: 0.25rem;
+
+.p-1 {
+    padding: $padding-unit;
+}
+.px-1 {
+    padding-left:  $padding-unit;
+    padding-right: $padding-unit;
+}
+.py-1 {
+    padding-top:   $padding-unit;
+    padding-bottom: $padding-unit;
+}
+.p-2 {
+    padding: calc(#{$padding-unit} * 2);
+}
+.px-2 {
+    padding-left:  calc(#{$padding-unit} * 2);
+    padding-right: calc(#{$padding-unit} * 2);
+}
+.py-2 {
+    padding-top:   calc(#{$padding-unit} * 2);
+    padding-bottom: calc(#{$padding-unit} * 2);
+}
+.p-3 {
+    padding: calc(#{$padding-unit} * 4);
+}
+.p-4 {
+    padding: calc(#{$padding-unit} * 8);
+}
+.p-5 {
+    padding: calc(#{$padding-unit} * 16);
+}
+.px-5 {
+    padding-left:  calc(#{$padding-unit} * 16);
+    padding-right: calc(#{$padding-unit} * 16);
+}
+.py-5 {
+    padding-top:   calc(#{$padding-unit} * 16);
+    padding-bottom: calc(#{$padding-unit} * 16);
+}
+.p-6 {
+    padding: calc(#{$padding-unit} * 32);
+}
+.m-1 {
+    margin: $padding-unit;
+}
+.m-2 {
+    margin: calc(#{$padding-unit} * 2);
+}
+.m-3 {
+    margin: calc(#{$padding-unit} * 4);
+}
+.m-4 {
+    margin: calc(#{$padding-unit} * 8);
+}
+.m-5 {
+    margin: calc(#{$padding-unit} * 16);
+}
+.m-6 {
+    margin: calc(#{$padding-unit} * 32);
+}

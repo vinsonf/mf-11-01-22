@@ -1,0 +1,7 @@
+.theme-dark {
+    @extend .bg-dark;
+    @extend .text-white;
+    a {
+        color: $white;
+    }
+}

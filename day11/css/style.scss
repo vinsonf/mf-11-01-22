@@ -1,0 +1,25 @@
+
+@import 'variables';
+@import 'colors';
+@import 'theme';
+@import 'spacing';
+@import 'grid';
+
+@import 'nav';
+@import 'button';
+
+.card {
+    margin-bottom: 100px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    padding-bottom: 40px;
+}
+
+.card-container {
+    height: 56px;
+    margin-bottom: -5px;
+    z-index: 40;
+    position: relative;
+}
